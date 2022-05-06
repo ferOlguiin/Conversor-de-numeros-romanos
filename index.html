@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagenes/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b27b57eb8a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rufina&display=swap" rel="stylesheet">
+
+    <title>Conversor de números romanos</title>
+</head>
+<body class="cuerpo">
+    
+    <div class="bg-black cara1 container-fluid" id="faceta1">
+        <button class="btn btn-outline-warning p-3 fs-4 fw-bold" id="btn">
+            Abrir conversor de números romanos
+        </button>
+    </div>
+    <div class="bg-dark bg-opacity-75 d-none container-fluid" id="faceta2">
+        <div class="d-flex flex-column bg-secondary rounded filtro bg-opacity-75 p-4">
+            <div class="container-fluid d-flex m-2 p-3">
+                <h2 class="fw-bold text-black">Conversor de números romanos</h2>
+            </div>
+            <div class="container-fluid d-flex m-2 p-3">
+                <input class="form-control me-2" type="number" placeholder="Número entero sin puntos ni comas" id="NumArabico">
+                <button class="btn btn-success ms-2" id="btnConversor">Convertir</button>
+            </div>
+            <div class="container-fluid d-flex justify-content-start align-items-center m-2 p-3">
+                <h4 class="my-0 text-black fs-4 fw-bold text-decoration-underline">Resultado:</h4>
+                <p class="my-0 ms-2 result fs-3 fw-bold text-break" id="LetRomana"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

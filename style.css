@@ -1,0 +1,54 @@
+* {
+    font-family: 'Rufina', serif;
+}
+
+
+.cuerpo {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./imagenes/roman.jpg);
+    background-size: cover;
+    animation: movimiento 15s infinite ease-out alternate;
+}
+
+@keyframes movimiento {
+    0% {
+        background-position: bottom left;
+    }
+    30% {
+        background-position: top right;
+    }
+    60% {
+        background-position: top left;
+    }
+    100% {
+        background-position: bottom right;
+    }
+}
+
+#btn {
+    color: white;
+}
+#btn:hover {
+    color: black;
+}
+
+.cara1 {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtro {
+    filter: drop-shadow(1px 1px 5px rgba(255, 255, 255, 0.534));
+}
+
+.result {
+    color: rgb(22, 19, 19);
+    text-shadow: 1px 1px 3px rgb(0, 255, 255);
+}
